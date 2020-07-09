@@ -49,55 +49,22 @@
 
 </head>
 ​
-​<style>
-  body {
-      background-color: rgb(185, 216, 245);
-  }
-</style>
-
 <body>
 
-    <div class="jumbotron">
-        <h1 class="display-4">WeatherPy Project</h1>
-        <p>My assignment was to prove that temperatures increase when moving closer to the equator. Even though that's a 'duh' statement, how does one prove it with data?</p>
-        <hr class="my-4">
-        <p>This was a fun assignment given to me by Kansas University's Data Analytics Bootcamp.</p>
-        <a class="btn btn-primary btn-lg" href="Visualizations/hug.jpg" role="button">Click for a free hug!</a>
-      </div>
+<p> On this page, you are seeing the Pandas data table from which all of the plots were done. The table includes the weather data as well as the latitude and longitude 
+    combinations. 
+</p>
+
+<iframe src="Assets/weather_data.html" title="Weather Data" width="700px" height="500px"> </iframe>
+
+<style> 
+body {
+    background-color: rgb(202, 237, 238);
+}
+</style>
 
 
-  <p>The jist of the assignment: Firstly, I was to pull in data via an API call to the Open Weather Database. I randomly picked 500+ latitude and longitude combinations,
-of cities around the world, by using NumPy. The .json data that came back from the API call contained temperatures, humidity counts, windspeeds, amongst others. Secondly, I 
-placed the data into a Pandas DataFrame. Finally, I was able to use Matplotlib to do plots within my Jupyter Notebook. Have fun here, and take care! </p>
-​
-  <p>Click on these plots to learn more!
-  </p>
 
-  <!-- Bold Link -->
+</body>
 
-  <article>
-    <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/TemperatureMap"><img target="_blank" src="Visualizations/latVStemp.png" class="rounded float-right" alt="Latitude VS Temperature"></a>
-    </article> 
-     <br>
-
-    <article>
-        <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/HumidityMap"><img target="_blank" src="Visualizations/latVShum.png" alt="Temperature VS Humidity"></a>
-        </article> 
-        <br>
-
-    <article>
-        <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/CloudMap"><img target="_blank" src="Visualizations/latVScloud.png" class="rounded float-right" alt="Temperature VS Cloudiness"></a>
-        </article> 
-        <br>
- 
-    <article>
-        <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/WindMap"><img target="_blank" src="Visualizations/latVSwind.png" alt="Temperature VS Windspeed"></a>
-        </article> 
-        <br>
- 
-   
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  </html>
+</html>
