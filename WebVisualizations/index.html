@@ -2,104 +2,139 @@
 ​
 <html lang='en-us'>
 ​
-<head>
-    <meta charset="UTF-8">
-    <title>WeatherPy Project</title>
-    <link rel="stylesheet" type="text/css" href="teststyle.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://github.com/">Github <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://bootcamp.ku.edu/">KU BCS</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                My Pages
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/TemperatureMap">Latitude VS Temperature</a>
-                <a class="dropdown-item" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/HumidityMap">Latitude VS Humidity</a>
-                <a class="dropdown-item" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/CloudMap">Latitude VS Cloudiness</a>
-                <a class="dropdown-item" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/WindMap">Latitude VS Windspeed</a>
-                <a class="dropdown-item" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/DataFrame">DataFrame</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://github.com/RHartley09/">My Github Account</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy Project</title>
+  <link rel="stylesheet" type="text/css" href="teststyle.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: rgb(185, 216, 245);
+    }
+  </style>
 
 </head>
-​
-​<style>
-  body {
-      background-color: rgb(185, 216, 245);
-  }
-</style>
 
 <body>
+  {% include nav.html %}
 
-    <div class="jumbotron">
-        <h1 class="display-4">WeatherPy Project</h1>
-        <p class="text-white bg-dark">My assignment was to prove that temperatures increase when moving closer to the equator. Even though that's a 'duh' statement, how does one prove it with data?</p>
-        <hr class="my-4">
-        <p class="text-white bg-dark">This was a fun assignment given to me by Kansas University's Data Analytics Bootcamp.
-          <!-- <img src="Visualizations/manhattanhenge2-july-a67606741.jpg" class="img-fluid" alt="Manhattanhenge"> -->
-        </p>
-        <a class="btn btn-primary btn-lg" href="Visualizations/hug.jpg" role="button">Click for a free hug!</a>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/">Github <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bootcamp.ku.edu/">KU BCS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            My Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"
+              href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/TemperatureMap">Latitude VS
+              Temperature</a>
+            <a class="dropdown-item"
+              href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/HumidityMap">Latitude VS
+              Humidity</a>
+            <a class="dropdown-item"
+              href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/CloudMap">Latitude VS
+              Cloudiness</a>
+            <a class="dropdown-item"
+              href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/WindMap">Latitude VS
+              Windspeed</a>
+            <a class="dropdown-item"
+              href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/DataFrame">DataFrame</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://github.com/RHartley09/">My Github Account</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
 
-  <p>The jist of the assignment: Firstly, I was to pull in data via an API call to the Open Weather Database. I randomly picked 500+ latitude and longitude combinations,
-of cities around the world, by using NumPy. The .json data that came back from the API call contained temperatures, humidity counts, windspeeds, amongst others. Secondly, I 
-placed the data into a Pandas DataFrame. Finally, I was able to use Matplotlib to do plots within my Jupyter Notebook. Have fun here, and take care! </p>
-​
+  ​
+  ​
+
+
+
+  <div class="jumbotron">
+    <h1 class="display-4">WeatherPy Project</h1>
+    <p class="text-white bg-dark">My assignment was to prove that temperatures increase when moving closer to the
+      equator. Even though that's a 'duh' statement, how does one prove it with data?</p>
+    <hr class="my-4">
+    <p class="text-white bg-dark">This was a fun assignment given to me by Kansas University's Data Analytics Bootcamp.
+      <!-- <img src="Visualizations/manhattanhenge2-july-a67606741.jpg" class="img-fluid" alt="Manhattanhenge"> -->
+    </p>
+    <a class="btn btn-primary btn-lg" href="Visualizations/hug.jpg" role="button">Click for a free hug!</a>
+  </div>
+
+
+  <p>The jist of the assignment: Firstly, I was to pull in data via an API call to the Open Weather Database. I randomly
+    picked 500+ latitude and longitude combinations,
+    of cities around the world, by using NumPy. The .json data that came back from the API call contained temperatures,
+    humidity counts, windspeeds, amongst others. Secondly, I
+    placed the data into a Pandas DataFrame. Finally, I was able to use Matplotlib to do plots within my Jupyter
+    Notebook. Have fun here, and take care! </p>
+  ​
   <p>Click on these plots to learn more!
   </p>
 
- 
+
 
   <article>
-    <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/TemperatureMap"><img target="_blank" src="Visualizations/latVStemp.png" class="rounded float-right" alt="Latitude VS Temperature"></a>
-    </article> 
-     <br>
+    <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/TemperatureMap"><img target="_blank"
+          src="Visualizations/latVStemp.png" class="rounded float-right" alt="Latitude VS Temperature"></a>
+  </article>
+  <br>
 
-    <article>
-        <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/HumidityMap"><img target="_blank" src="Visualizations/latVShum.png" alt="Temperature VS Humidity"></a>
-        </article> 
-        <br>
+  <article>
+    <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/HumidityMap"><img target="_blank"
+          src="Visualizations/latVShum.png" alt="Temperature VS Humidity"></a>
+  </article>
+  <br>
 
-    <article>
-        <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/CloudMap"><img target="_blank" src="Visualizations/latVScloud.png" class="rounded float-right" alt="Temperature VS Cloudiness"></a>
-        </article> 
-        <br>
- 
-    <article>
-        <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/WindMap"><img target="_blank" src="Visualizations/latVSwind.png" alt="Temperature VS Windspeed"></a>
-        </article> 
-        <br>
- 
-   
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <article>
+    <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/CloudMap"><img target="_blank"
+          src="Visualizations/latVScloud.png" class="rounded float-right" alt="Temperature VS Cloudiness"></a>
+  </article>
+  <br>
 
-  </html>
+  <article>
+    <a><a href="https://rhartley09.github.io/Web-Design-Challenge/WebVisualizations/WindMap"><img target="_blank"
+          src="Visualizations/latVSwind.png" alt="Temperature VS Windspeed"></a>
+  </article>
+  <br>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
