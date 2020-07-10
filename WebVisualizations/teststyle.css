@@ -44,3 +44,8 @@ iframe {
   /* padding-left: 100px;
   padding-right: 100px; */
 }
+
+.jumbotron {
+  background-image: url("Visualizations/manhattanhenge2-july-a67606741.jpg");
+  background-size: cover;
+}
